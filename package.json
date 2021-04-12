@@ -1,11 +1,16 @@
 {
   "name": "web_rtc_chat_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "League of freinds video chat",
+  "engines": {
+   "node": "13.7.0",
+   "npm": "6.13.6"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
    },
   "keywords": [],
   "author": "",
